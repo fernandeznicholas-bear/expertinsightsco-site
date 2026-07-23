@@ -3,75 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Expert Insights Co. — Custom Storefronts + Online Booking, El Paso TX</title>
-<meta name="description" content="Expert Insights Co. builds custom online storefronts with booking for small food and service businesses in El Paso, Texas. Full site launching soon.">
+<title>Expert Insights — Custom Storefronts + Online Booking · El Paso, TX</title>
+<meta name="description" content="Expert Insights builds custom online storefronts with built-in booking for small food and service businesses in El Paso, Texas. Customers book and pay you there, not in your DMs.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy:#0B1D3A;
-    --navy-deep:#071224;
-    --orange:#F47C20;
-    --cream:#F6F1E9;
-    --muted:#A9B8CE;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    font-family:'Montserrat',system-ui,-apple-system,sans-serif;
-    background:radial-gradient(120% 120% at 50% 0%, #12305e 0%, var(--navy) 45%, var(--navy-deep) 100%);
-    color:var(--cream);
-    display:flex;align-items:center;justify-content:center;
-    padding:32px;
-    text-align:center;
-  }
-  main{max-width:640px;animation:rise .9s ease both}
-  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-  .kicker{
-    font-size:12px;font-weight:600;letter-spacing:.42em;text-transform:uppercase;
-    color:var(--orange);margin-bottom:22px;
-  }
-  h1{
-    font-weight:800;letter-spacing:-.02em;
-    font-size:clamp(34px,7vw,58px);
-    line-height:1.05;
-  }
-  h1 .co{color:var(--orange)}
-  .rule{
-    width:64px;height:4px;background:var(--orange);border-radius:2px;
-    margin:30px auto;
-  }
-  .tagline{
-    font-size:clamp(17px,2.6vw,21px);font-weight:500;line-height:1.55;
-    color:var(--cream);
-  }
-  .sub{
-    margin-top:14px;font-size:15px;line-height:1.6;color:var(--muted);
-  }
-  .cta{
-    margin-top:40px;display:inline-block;
-    font-size:14px;font-weight:600;letter-spacing:.02em;
-    color:var(--cream);text-decoration:none;
-    border:1.5px solid var(--orange);border-radius:999px;
-    padding:13px 30px;
-    transition:background .2s ease,color .2s ease,transform .2s ease;
-  }
-  .cta:hover{background:var(--orange);color:var(--navy);transform:translateY(-1px)}
-  footer{
-    margin-top:56px;font-size:12.5px;letter-spacing:.06em;color:var(--muted);
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/favicon.svg" alt="">
+      <span class="brand__name">Expert<b>&nbsp;Insights</b></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="work.html">Our Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn btn--primary" href="contact.html">Let's Talk</a></li>
+    </ul>
+  </nav>
+</header>
+
 <main>
-  <p class="kicker">Launching&nbsp;Soon</p>
-  <h1>Expert Insights<span class="co">&nbsp;Co.</span></h1>
-  <div class="rule"></div>
-  <p class="tagline">Custom online storefronts with built-in booking, designed by hand for small food &amp; service businesses.</p>
-  <p class="sub">Stop losing bookings to your DMs. We build you a real storefront, designed around your business and live in weeks. Proudly built in El&nbsp;Paso,&nbsp;Texas.</p>
-  <a class="cta" href="mailto:expertinsightsco@gmail.com?subject=Storefront%20inquiry">Get in touch</a>
-  <footer>© 2026 Expert Insights LLC · El Paso, TX</footer>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Custom Storefronts · El Paso, TX</p>
+      <h1>We build your online storefront.</h1>
+      <p class="lead">Customers <span class="accent">book and pay you there</span> — not in your DMs. Hand-designed, built around your business, and live in weeks.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="contact.html">Let's Talk</a>
+        <a class="btn btn--ghost" href="work.html">See our work</a>
+      </div>
+      <p class="hero__note"><span aria-hidden="true">◆</span> Real Insights. Expertly Delivered.</p>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section class="section">
+    <div class="wrap">
+      <div class="center measure">
+        <p class="eyebrow">What you get</p>
+        <h2>A real online home that does the work for you.</h2>
+        <p class="lead" style="margin-top:14px">Most small businesses lose bookings because everything still happens in DMs. We fix that.</p>
+      </div>
+      <div class="grid grid--3" style="margin-top:48px">
+        <div class="card">
+          <div class="card__num">1</div>
+          <h3>A storefront that fits</h3>
+          <p>Pages designed by hand around your business and your brand — your colors, your packages, your voice. Not a template with your logo dropped on top.</p>
+        </div>
+        <div class="card">
+          <div class="card__num">2</div>
+          <h3>Booking built in</h3>
+          <p>Customers pick a date, choose a package, and pay a deposit — automatically. Confirmation and reminder emails go out without you lifting a finger.</p>
+        </div>
+        <div class="card">
+          <div class="card__num">3</div>
+          <h3>Yours to keep</h3>
+          <p>You own the site, the domain, and every asset. We hand you a recorded walkthrough so you can run it yourself, with support on call when you want it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof band -->
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="case">
+        <div>
+          <p class="eyebrow">Our first build</p>
+          <h2>Melania Cotton Candy took their bookings out of the DMs.</h2>
+          <div class="beforeafter">
+            <div class="ba ba--before">
+              <div class="ba__tag">Before</div>
+              <p>Every quinceañera and party order handled by hand in Instagram DMs.</p>
+            </div>
+            <div class="ba ba--after">
+              <div class="ba__tag">After</div>
+              <p>A branded storefront where customers browse, book, and pay a deposit online.</p>
+            </div>
+          </div>
+          <p class="lead" style="font-size:16px">A woman-owned El Paso live cotton-candy art experience — now with a storefront built around their characters, their packages, and their brand.</p>
+          <p style="margin-top:22px"><a class="textlink" href="work.html">See the full case study</a></p>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <div style="background:linear-gradient(135deg,#12305e,#0B1D3A);color:var(--cream);padding:34px">
+            <p style="font-weight:800;font-size:22px;color:#fff">melaniacottoncandyep.com</p>
+            <p style="color:var(--muted);margin-top:8px;font-size:15px">Live now — a hand-built Shopify storefront with online booking, deposits, and automated confirmations.</p>
+            <div class="chips" style="margin-top:20px">
+              <span class="chip">Online booking</span>
+              <span class="chip">Deposit checkout</span>
+              <span class="chip">Branded emails</span>
+              <span class="chip">Mobile-first</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing teaser -->
+  <section class="section">
+    <div class="wrap center">
+      <p class="eyebrow">Simple pricing</p>
+      <h2>Three ways to get online.</h2>
+      <p class="lead measure" style="margin:14px auto 44px">One-time builds starting at $997. No monthly platform lock-in — you own everything.</p>
+      <div class="tiers" style="text-align:left">
+        <div class="tier">
+          <div class="tier__name">Starter</div>
+          <div class="tier__promise">Get online, take bookings.</div>
+          <div class="tier__price">$997<small> one-time</small></div>
+          <div class="tier__sub">&nbsp;</div>
+          <ul>
+            <li>Custom-branded storefront</li>
+            <li>Booking configured for you</li>
+            <li>Up to 5 packages loaded</li>
+            <li>Live in ~2 weeks</li>
+          </ul>
+          <a class="btn btn--outline" href="pricing.html">See what's included</a>
+        </div>
+        <div class="tier tier--feature">
+          <div class="tier__flag">Our flagship</div>
+          <div class="tier__name">Signature</div>
+          <div class="tier__promise">A storefront designed by hand around your business.</div>
+          <div class="tier__price">$2,497<small> intro</small></div>
+          <div class="tier__sub">What we built for Melania</div>
+          <ul>
+            <li>Every page hand-designed</li>
+            <li>Booking engineered end-to-end</li>
+            <li>Pro email on your domain</li>
+            <li>Training + 90-day support</li>
+          </ul>
+          <a class="btn btn--primary" href="pricing.html">See what's included</a>
+        </div>
+        <div class="tier">
+          <div class="tier__name">Growth</div>
+          <div class="tier__promise">Run it yourself, grow your list.</div>
+          <div class="tier__price">$1,497<small> one-time</small></div>
+          <div class="tier__sub">&nbsp;</div>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>Recorded dashboard training</li>
+            <li>Email marketing set up</li>
+            <li>Up to 10 packages loaded</li>
+          </ul>
+          <a class="btn btn--outline" href="pricing.html">See what's included</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="section cta-band">
+    <div class="wrap">
+      <h2>Let's build something that lasts.</h2>
+      <p class="lead measure">Tell us about your business. We'll show you exactly what your storefront could look like — no pressure, no jargon.</p>
+      <a class="btn btn--primary" href="contact.html">Let's Talk</a>
+    </div>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/favicon.svg" alt="">
+          <span class="brand__name">Expert&nbsp;Insights</span>
+        </a>
+        <p>Custom online storefronts with built-in booking for small food &amp; service businesses. Proudly built in El Paso, Texas.</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Let's Talk</a></li>
+      </ul>
+    </div>
+    <div class="fine">
+      <span>© 2026 Expert Insights LLC · El Paso, TX</span>
+      <span><a href="mailto:expertinsightsco@gmail.com" style="color:var(--gold);text-decoration:none">expertinsightsco@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
 </body>
 </html>

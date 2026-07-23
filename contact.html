@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let's Talk — Expert Insights · Start Your Storefront</title>
+<meta name="description" content="Tell us about your business and we'll show you what your online storefront could look like. Based in El Paso, Texas.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/favicon.svg" alt="">
+      <span class="brand__name">Expert<b>&nbsp;Insights</b></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="work.html">Our Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn btn--primary" href="contact.html" aria-current="page">Let's Talk</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Let's Talk</p>
+      <h1>Tell us about your business.</h1>
+      <p class="lead">No pressure, no jargon. We'll reply with an honest read on what we'd build and what it would cost — even if that's the smallest tier.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <form id="contactForm">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business">
+          </div>
+          <div class="field">
+            <label for="tier">What are you picturing?</label>
+            <select id="tier" name="tier">
+              <option value="Not sure yet">Not sure yet — help me pick</option>
+              <option value="Starter ($997)">Starter — get online, take bookings ($997)</option>
+              <option value="Growth ($1,497)">Growth — run it yourself ($1,497)</option>
+              <option value="Signature ($2,497)">Signature — hand-built flagship ($2,497)</option>
+              <option value="Franchise / multi-location">Franchise / multi-location</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us a little about it</label>
+            <textarea id="message" name="message" placeholder="What does your business do? How do customers book with you today?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send it our way</button>
+          <p id="formNote" style="margin-top:14px;font-size:13.5px;color:var(--ink-soft)">This opens your email app with everything filled in — just hit send. Prefer to write us directly? <a class="textlink" href="mailto:expertinsightsco@gmail.com">expertinsightsco@gmail.com</a></p>
+        </form>
+
+        <aside class="contact-aside">
+          <h3>Reach us directly</h3>
+          <p>We're a two-person studio, so you'll always be talking to a founder.</p>
+          <div class="row"><span>Email</span><span><a href="mailto:expertinsightsco@gmail.com">expertinsightsco@gmail.com</a></span></div>
+          <div class="row"><span>Based in</span><span style="color:var(--cream)">El Paso, Texas</span></div>
+          <div class="row"><span>See it live</span><span><a href="https://melaniacottoncandyep.com" target="_blank" rel="noopener">melaniacottoncandyep.com ↗</a></span></div>
+          <p style="margin-top:8px">Want to see what "Signature" means before you write? Our first build is live and taking real bookings.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/favicon.svg" alt="">
+          <span class="brand__name">Expert&nbsp;Insights</span>
+        </a>
+        <p>Custom online storefronts with built-in booking for small food &amp; service businesses. Proudly built in El Paso, Texas.</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Let's Talk</a></li>
+      </ul>
+    </div>
+    <div class="fine">
+      <span>© 2026 Expert Insights LLC · El Paso, TX</span>
+      <span><a href="mailto:expertinsightsco@gmail.com" style="color:var(--gold);text-decoration:none">expertinsightsco@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var v = function (id) { return (document.getElementById(id).value || '').trim(); };
+  var subject = 'Storefront inquiry' + (v('business') ? ' — ' + v('business') : '');
+  var body =
+    'Name: ' + v('name') + '\n' +
+    'Email: ' + v('email') + '\n' +
+    'Business: ' + v('business') + '\n' +
+    'Interested in: ' + v('tier') + '\n\n' +
+    v('message');
+  window.location.href = 'mailto:expertinsightsco@gmail.com?subject=' +
+    encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
